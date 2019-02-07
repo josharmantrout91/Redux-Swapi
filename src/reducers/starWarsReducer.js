@@ -18,6 +18,7 @@ export const charsReducer = (state = initialState, action) => {
       fetching: true
     };
     case CHAR_DATA_SUCCESS: 
+    console.log(action.payload);
     return {
       ...state,
       fetching: false,
